@@ -131,7 +131,9 @@ main {
   }
 
   header input {
+    width: 13rem;
     margin-top: 0.5rem;
     margin-right: 0;
+    text-align: center;
   }
 }
