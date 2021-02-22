@@ -119,3 +119,19 @@ main {
 .movie:hover .overview {
   transform: translateY(0);
 }
+
+@media screen and (max-width: 500px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  header span {
+    margin-left: 0;
+  }
+
+  header input {
+    margin-top: 0.5rem;
+    margin-right: 0;
+  }
+}
