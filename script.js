@@ -7,6 +7,7 @@ const SEARCH_API =
 const form = document.getElementById('form');
 const search = document.querySelector('#search');
 const mainContainer = document.querySelector('#main');
+const movieInfo = document.querySelector('.movie-info');
 
 //Get movies onLoad
 
@@ -29,7 +30,7 @@ const showMovies = (movies) => {
 
     movieEl.innerHTML = `
             <img
-              src="${IMG_PATH + poster_path}" alt="${title}"
+              src="${IMG_PATH + poster_path}" alt="${title}" class="movieImg"
             />
             <div class="movie-info">
               <h3>${title}</h3>
@@ -45,9 +46,9 @@ const showMovies = (movies) => {
 
     mainContainer.appendChild(movieEl);
 
-    movieEl.addEventListener('click', () => {
-      getMovieDetails(api_movie_details_url);
-    });
+    // movieEl.addEventListener('click', () => {
+    //   getMovieDetails(api_movie_details_url);
+    // });
 
     let api_movie_details_url = `https://api.themoviedb.org/3/movie/${id}?api_key=11316024a2d8685bd72864cd19d53d2e`;
   });
